@@ -32,9 +32,7 @@ public class ApplicationDeCharite extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //launch(args);
-        DonCrud dc = new DonCrud();
-        System.out.println(dc.afficherDons());
+        launch(args);
         
     }
     
