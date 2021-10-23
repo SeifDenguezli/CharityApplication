@@ -10,6 +10,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import services.EvenementService;
+import utils.DbConnection;
 
 /**
  *
@@ -31,7 +33,15 @@ public class ApplicationDeCharite extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        launch(args);
+        //launch(args);
+        DbConnection mc= DbConnection.getInstance();
+        EvenementService ev = new EvenementService();
+        /*Date date = new Date(21, 10, 13);
+        Evenement e1 = new Evenement("Transport", "Achat de bus", 100, date, 100, "test");
+        //ev.ajouterEvenement(e1);
+        //ev.supprimerEvenement(4);*/
+        System.out.println(ev.showAllEvents());
+        /*System.out.println(ev.getAssocActive1());*/
     }
     
 }
