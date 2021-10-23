@@ -10,6 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import services.DonCrud;
 
 /**
  *
@@ -31,7 +32,10 @@ public class ApplicationDeCharite extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        launch(args);
+        //launch(args);
+        DonCrud dc = new DonCrud();
+        System.out.println(dc.afficherDons());
+        
     }
     
 }
